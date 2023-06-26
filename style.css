@@ -1,0 +1,180 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Martel, serif;
+    background-color: #B6D4D1;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Scada', sans-serif;
+    font-weight: normal;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex-basis: calc(100% / 3 - 20px);
+    margin: 10px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: black;
+    padding: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #B6D4D1;
+  }
+  
+  /* Introduction Section Styles */
+  #intro {
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  #intro h1 {
+    font-size: 6rem;
+    margin-bottom: 20px;
+  }
+  
+  #intro p {
+    font-size: 24px;
+  }
+  
+  /* About Section Styles */
+  #about {
+    padding: 80px 0;
+  }
+  
+  #about h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #about .col {
+    text-align: center;
+  }
+  
+  #about img {
+    max-width: 100%;
+  }
+  
+  /* Portfolio Section Styles */
+  #portfolio {
+    background-color: #fff;
+    padding: 80px 0;
+  }
+  
+  #portfolio h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #portfolio .col {
+    text-align: center;
+  }
+  
+  #portfolio img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #portfolio h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #portfolio p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  #portfolio a {
+    text-decoration: none;
+    color: #3e8e41;
+    border: 2px solid #3e8e41;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #portfolio a:hover {
+    background-color: #3e8e41;
+    color: #fff;
+  }
+  
+  /* Contact Section Styles */
+  #contact {
+    padding: 80px 0;
+  }
+  
+  #contact h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #button {
+    float:inline-end;
+    text-decoration: none;
+    background-color:#f8f8f8;
+    color: #3e8e41;
+    border: 2px solid #3e8e41;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+  }  
+
+  #button:hover {
+    background-color: #3e8e41;
+    color: #fff;
+  }
