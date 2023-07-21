@@ -15,9 +15,9 @@
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -31,15 +31,18 @@
         
         <section id="about">
             <div class="container">
-                <h2>About Me</h2>
                 <div class="row">
                     <div class="col">
-                        <p>I am a composer of orchestral and electronic scores for film and video</p>
+                        <!-- Add your portrait photo here -->
+                        <img src="/images/Profile Pic (5).jpeg" alt="Portrait Photo">
                     </div>
                     <div class="col">
-                        <!-- Add your portrait photo here -->
-                        <img src="portrait.jpg" alt="Portrait Photo">
+                        <p>Dan is a composer of orchestral and electronic scores for film and video.
+                             He's a first class honours graduate of Leeds Conservatoir in the UK who can create 
+                             powerful scores for full orchestra or simple backgrounds to your video work.
+                        </p>
                     </div>
+                    
                 </div>
             </div>
         </section>
@@ -50,11 +53,11 @@
                 <div class="row">
                     <div class="col">
                         <!-- Add your project photo here -->
-                        <img src="project1.jpg" alt="Project Photo">
-                        <h3>Project 1</h3>
-                        <p>Description of the project</p>
+                        <img src="/images/Spring still.jpg" alt="Project Photo">
+                        <h3>Spring - Score</h3>
+                        <p>A re-score of an animated short from Blender Animation</p>
                         <!-- Add a link to the project here -->
-                        <a href="#">View Project</a>
+                        <a href="https://youtu.be/0s8qN8qX9-8">View Project</a>
                     </div>
                     <div class="col">
                         <!-- Add your project photo here -->
@@ -68,6 +71,14 @@
                         <!-- Add your project photo here -->
                         <img src="project3.jpg" alt="Project Photo">
                         <h3>Project 3</h3>
+                        <p>Description of the project</p>
+                        <!-- Add a link to the project here -->
+                        <a href="#">View Project</a>
+                    </div>
+                    <div class="col">
+                        <!-- Add your project photo here -->
+                        <img src="project3.jpg" alt="Project Photo">
+                        <h3>Project 4</h3>
                         <p>Description of the project</p>
                         <!-- Add a link to the project here -->
                         <a href="#">View Project</a>
@@ -92,6 +103,22 @@
 
                     <input id=button type="submit" value="Submit">
                 </form>
+                <a href="mailto:your-email@example.com?subject=Form Submission" onclick="generateEmail()">Send Email</a>
+            </form>
+            
+            <script>
+              function generateEmail() {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var message = document.getElementById('message').value;
+            
+                var subject = encodeURIComponent('Form Submission');
+                var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
+            
+                var mailtoLink = 'mailto:your-email@example.com?subject=' + subject + '&body=' + body;
+                window.location.href = mailtoLink;
+              }
+            </script>
             </div>
         </section>
     </main>    

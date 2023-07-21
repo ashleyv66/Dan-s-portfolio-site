@@ -7,7 +7,7 @@
   
   body {
     font-family: Martel, serif;
-    background-color: #B6D4D1;
+    background-color: #E6C363;
   }
   
   h1, h2, h3, h4 {
@@ -27,13 +27,13 @@
   }
   
   .col {
-    flex-basis: calc(100% / 3 - 20px);
+    flex-basis: calc(100% / 2 - 20px);
     margin: 10px;
   }
   
   /* Header Styles */
   header {
-    background-color: black;
+    background-color:#614A0D;
     padding: 20px;
   }
   
@@ -53,14 +53,18 @@
   }
   
   nav a:hover {
-    color: #B6D4D1;
+    color:#E0AC1D;
   }
   
   /* Introduction Section Styles */
   #intro {
-    background-color: #fff;
-    color: black;
-    text-align: center;
+    background-color: hsl(0, 0%, 50%);
+    background-image:url(/images/IMG_1141.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    /*text-align: center;*/
     padding: 100px 0;
   }
   
@@ -76,6 +80,13 @@
   /* About Section Styles */
   #about {
     padding: 80px 0;
+  }
+
+  #about p {
+    text-align:center;
+    color: #665E48;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
   
   #about h2 {
@@ -125,20 +136,21 @@
   
   #portfolio a {
     text-decoration: none;
-    color: #3e8e41;
-    border: 2px solid #3e8e41;
+    color: #802C05;
+    border: 2px solid #802C05;
     padding: 10px 20px;
     border-radius: 5px;
     transition: all 0.2s ease-in-out;
   }
   
   #portfolio a:hover {
-    background-color: #3e8e41;
+    background-color: #802C05;
     color: #fff;
   }
   
   /* Contact Section Styles */
   #contact {
+    background: color #147a71;
     padding: 80px 0;
   }
   
@@ -166,15 +178,15 @@
   #button {
     float:inline-end;
     text-decoration: none;
-    background-color:#f8f8f8;
-    color: #3e8e41;
-    border: 2px solid #3e8e41;
+    background-color:#665E48;
+    color: white;
+    border: 2px solid #665E48;
     padding: 10px 20px;
     border-radius: 5px;
     transition: all 0.2s ease-in-out;
   }  
 
   #button:hover {
-    background-color: #3e8e41;
+    background-color: #AD8516;
     color: #fff;
   }
