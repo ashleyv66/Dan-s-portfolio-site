@@ -25,7 +25,7 @@
         <section id="intro">
             <div class="container">
                 <h1>DANIEL VICKERS</h1>
-                <p>Composer - Arranger - Orchestrator</p>
+                <p>Composer - Arranger - Orchestrator - Producer</p>
             </div>
         </section>
         
@@ -39,7 +39,7 @@
                     <div class="col">
                         <p>Dan is a composer of orchestral and electronic scores for film and video.
                              He's a first class honours graduate of Leeds Conservatoir in the UK who can create 
-                             powerful scores for full orchestra or simple backgrounds to your video work.
+                             powerful scores for full orchestra or electronic instruments.
                         </p>
                     </div>
                     
@@ -90,7 +90,7 @@
         <section id="contact">
             <div class="container">
                 <h2>Contact Me</h2>
-                <form action="submit-form.php" method="post">
+                <form action="submitForm.php" method="post">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
                     
@@ -101,25 +101,25 @@
                     <textarea id="message" name="message" required>
                     </textarea>
 
-                    <input id=button type="submit" value="Submit">
+                    <input id="button" type="submit" value="Submit">
                 </form>
-                <a href="mailto:your-email@example.com?subject=Form Submission" onclick="generateEmail()">Send Email</a>
-            </form>
-            
-            <script>
-              function generateEmail() {
-                var name = document.getElementById('name').value;
-                var email = document.getElementById('email').value;
-                var message = document.getElementById('message').value;
-            
-                var subject = encodeURIComponent('Form Submission');
-                var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
-            
-                var mailtoLink = 'mailto:your-email@example.com?subject=' + subject + '&body=' + body;
-                window.location.href = mailtoLink;
-              }
-            </script>
+                <div id="button">
+                <a href=&#109&#97&#105&#108&#116&#111&#58&#97&#115&#118&#105&#99&#107&#101&#114&#115&#64&#103&#109&#97&#105&#108&#46&#99&#111&#109 onclick="generateEmail()" title=>Send Email</a>
+                <script>
+                    function generateEmail() {
+                      var name = document.getElementById('name').value;
+                      var email = document.getElementById('email').value;
+                      var message = document.getElementById('message').value;
+                  
+                      var subject = encodeURIComponent('Form Submission');
+                      var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
+                  
+                      var mailtoLink = 'mailto:your-email@example.com?subject=' + subject + '&body=' + body;
+                      window.location.href = mailtoLink;
+                    }
+                  </script>
             </div>
+            
         </section>
     </main>    
 </body>
